@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mediaqueries.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav id="Desktop-nav">
+        <div class="logo">Ayush Mishra</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#" class="home-link"><i class="fas fa-home"></i></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ayush Mishra</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#" onclick="toggleMenu()"><i class="fas fa-home"></i></a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="images/profile_pic.png" alt="Ayush Mishra Profile pictures">
+
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 class="title">Ayush Mishra</h1>
+            <p class="section_text_p2">Data Analyst</p>
+            <div id="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/CV Ayush MIshra.pdf')">
+                Download CV</button> 
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info</button> 
+
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My linkedin Profile" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/ayush-mishra1728/'">
+                <img src="./assets/github.png" alt="My Github account" 
+                class="icon" onclick="location.href='https://github.com/Ayushsan1'">
+
+            </div>
+
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem; padding: 2rem;">
+            <div class="section_pic-container" style="flex: 0 1 280px;">
+                <img src="./images/about-pic.jpg" alt="Profile Picture" class="about-pic" style="border-radius: 15px; width: 100%; height: auto; max-width: 280px;"/>
+            </div>
+            <div class="about-text-container" style="flex: 0 1 500px; padding: 1rem;">
+                <p style="line-height: 1.8; text-align: justify; font-size: 1.1rem;">
+                    I am Ayush Mishra currently pursuing Bachelors of Science in Data Analytics from Delhi Skill and Entrepreneurship University (DSEU) Rajokri Campus. I am in my Final year of the Degree and have acquired skills like Python, Excel, PowerBi / Tableau, MySQL, and Machine Learning.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="contact-info-container" style="display: flex; flex-direction: column; gap: 20px; align-items: center; padding: 20px; width: 100%; max-width: 600px; margin: 0 auto;">
+            <div class="contact-details" style="display: flex; align-items: flex-start; gap: 15px; width: 100%; padding: 15px;">
+                <img src="./assets/experience.png" alt="experience" class="icon" style="width: 24px; height: 24px; margin-top: 4px;">
+                <div style="flex: 1;">
+                    <h3>Clinical Data Analyst</h3>
+                    <p>1 Month intern at MaxHealthcare, Saket</p>
+                    <p style="color: #666; font-size: 0.9rem;">July 2024 - August 2024</p>
+                </div>
+            </div>
+            <div class="contact-details" style="display: flex; align-items: flex-start; gap: 15px; width: 100%; padding: 15px;">
+                <img src="./assets/experience.png" alt="experience" class="icon" style="width: 24px; height: 24px; margin-top: 4px;">
+                <div style="flex: 1;">
+                    <h3>Data Analyst</h3>
+                    <p>Remote Internship at SkillUpgrade</p>
+                    <p style="color: #666; font-size: 0.9rem;">June 2024 - July 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; padding: 2rem;">
+            <div class="project-card" style="flex: 0 1 350px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <a href="https://github.com/Ayushsan1" target="_blank" style="display: block;">
+                    <img src="./assets/Project-1.png" alt="Project 1" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease;">
+                    <div style="padding: 1rem;">
+                        <h3 style="margin-bottom: 0.5rem;">Data Analysis Project</h3>
+                        <p style="color: #666; font-size: 0.9rem;">Python, Pandas, Matplotlib</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" style="flex: 0 1 350px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <a href="https://github.com/Ayushsan1" target="_blank" style="display: block;">
+                    <img src="./assets/Project-2.png" alt="Project 2" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease;">
+                    <div style="padding: 1rem;">
+                        <h3 style="margin-bottom: 0.5rem;">Data Visualization Dashboard</h3>
+                        <p style="color: #666; font-size: 0.9rem;">PowerBI, Excel, SQL</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-container" style="display: flex; flex-direction: column; gap: 20px; align-items: center; padding: 20px;">
+            <div class="contact-details" style="display: flex; align-items: center; gap: 15px;">
+                <i class="fas fa-envelope" style="font-size: 24px; color: #555;"></i>
+                <p><a href="mailto:aayushmish18@gmail.com">aayushmish18@gmail.com</a></p>
+            </div>
+            <div class="contact-details" style="display: flex; align-items: center; gap: 15px;">
+                <i class="fas fa-phone" style="font-size: 24px; color: #555;"></i>
+                <p>+91 8373967263</p>
+            </div>
+            <div class="contact-details" style="display: flex; align-items: center; gap: 15px;">
+                <i class="fas fa-map-marker-alt" style="font-size: 24px; color: #555;"></i>
+                <p>New Delhi, India</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body> 
+</html>
